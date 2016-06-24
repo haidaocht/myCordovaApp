@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
+    
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
@@ -45,6 +46,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
+        var haitch = document.getElementById("haitch");
+        haitch.onclick = this.setupNewSession;
+    },
+    
+    setupNewSession: function(){
+        var parentElement = document.getElementById("haitch");
+        parentElement.setAttribute('style', 'display:none;');
     }
 };
 

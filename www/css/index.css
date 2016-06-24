@@ -113,3 +113,10 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.bottomBar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 24px;
+}
